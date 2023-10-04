@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HCI ASSIGNMENT-02</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>INFORMATION</h1>
+        <form enctype="multipart/form-data" action="submit.php" method="post">
+            <div class="container">
+                <img src="logo.png" alt="Binus logo" width="375" height="275">
+                <fieldset class="left-fieldset">
+                    <legend>Personal</legend>
+                    <table>
+                        <tr>
+                            <td>Full Name:</td>
+                            <td><input type="text" id="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth:</td>
+                            <td><input type="date" id="date" name="date" required></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" style="vertical-align: top;">Gender:</td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <label for="address">Address:</label>
+                            </td>
+                            <td>
+                                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country:</td>
+                            <td>
+                                <select id="country" name="country" required>
+                                    <option value="" disabled selected>Select a country</option>
+                                    <option value="ausie">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="china">China</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="indo">Indonesia</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="rusia">Rusia</option>
+                                    <option value="singapore">Singapore</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="usa">United States</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td><input type="tel" id="tel" name="tel" required></td>
+                        </tr>
+                        <tr>
+                            <td>Personal Email:</td>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                    </table>
+                </fieldset>       
+                <fieldset class="right-fieldset">
+                    <legend>Binus</legend>
+                    <table>
+                        <tr>
+                            <td>Student ID:</td>
+                            <td><input type="id" id="id" name="id" required></td>
+                        </tr>
+                        <tr>
+                            <td>Major:</td>
+                            <td><input type="major" id="major" name="major" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td>Location:</td>
+                            <td>
+                                <select id="country" name="country" required>
+                                    <option value="" disabled selected>Select a location</option>
+                                    <option value="alsut">Alam Sutera</option>
+                                    <option value="bandung">Bandung</option>
+                                    <option value="bekasi">Bekasi</option>
+                                    <option value="kemanggisan">Kemanggisan</option>
+                                    <option value="malang">Malang</option>
+                                    <option value="semarang">Semarang</option>
+                                    <option value="senayan">Senayan</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Batch:</td>
+                            <td><input type="batch" id="batch" name="batch" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="image">Profile Picture:</label></td>
+                            <td>
+                                <input type="file" id="image" name="image" accept="image/*" required>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Upload"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        </td>
+                </tr>
+                </table>
+            </fieldset>
+            </br>
+            <div class="content-box">
+                <p style="color: black">I accept the terms and conditions.<input type="checkbox" id="terms" name="terms" value="terms" required></p>
+            </div>
+            </br>
+            </br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear Form">
+        </form>
+    </body>
+</html>
